@@ -1,0 +1,14 @@
+@import "utils";
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: $font-default;
+  color: $dark;
+  background-color: $light;
+
+  @include media-gte-lg {
+    background-color: $white;
+  }
+}

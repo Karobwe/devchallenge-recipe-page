@@ -1,0 +1,15 @@
+@import "../utils";
+
+section {
+  .variant__title {
+    font-family: $font-main;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .ingredients-list {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}

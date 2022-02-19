@@ -1,0 +1,26 @@
+@import "../utils";
+
+.recipe__overview {
+  .overview__item:first-of-type {
+    .overview__description,
+    .overview__icon {
+      color: $orange;
+    }
+  }
+
+  .overview__title {
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+
+    color: $grey4;
+  }
+
+  .overview__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

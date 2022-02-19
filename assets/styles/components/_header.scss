@@ -1,0 +1,19 @@
+@import "../utils";
+
+.header__title {
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.header__hook p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.header__picture {
+  width: clamp(calc(100vw - 11px * 2), 352px, 100%);
+}

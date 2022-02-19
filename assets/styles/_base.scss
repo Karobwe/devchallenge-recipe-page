@@ -5,10 +5,14 @@ body {
   height: 100vh;
 
   font-family: $font-default;
-  color: $dark;
+  color: $grey1;
   background-color: $light;
 
   @include media-gte-lg {
     background-color: $white;
+  }
+
+  .text--bold {
+    font-weight: bold;
   }
 }

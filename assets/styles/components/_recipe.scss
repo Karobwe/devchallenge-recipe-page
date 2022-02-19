@@ -1,0 +1,21 @@
+@import "recipe-overview";
+@import "recipe_ingredients";
+@import "recipe_instructions";
+
+section[class^="recipe__"] .section__title {
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.recipe__source,
+.recipe__source a {
+  font-style: italic;
+  font-size: 12px;
+  line-height: 150%;
+
+  text-decoration: none;
+
+  color: $grey4;
+}

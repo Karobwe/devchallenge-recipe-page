@@ -1,4 +1,8 @@
 footer {
+  // 6px for margin-top because 24px (from flex-gap) + 6px = 30px
+  // 30px is an arbitrary value taken from the design (gutter before "Instructions" title)
+  margin: 6px 0 24px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

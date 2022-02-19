@@ -1,6 +1,13 @@
 @import "../utils";
 
-section {
+.recipe__ingredients {
+  font-size: 18px;
+  line-height: 24px;
+
+  .section__title {
+    margin-bottom: 13px;
+  }
+
   .variant__title {
     font-family: $font-main;
     font-style: italic;

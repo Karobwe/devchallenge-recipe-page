@@ -1,7 +1,22 @@
 @import "../utils";
 
 .recipe__overview {
-  .overview__item:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
+  .overview__item {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  .overview__item:not(:first-child) {
+    flex: 1;
+  }
+
+  .overview__item:nth-child(1) {
+    width: 100%;
+
     .overview__description,
     .overview__icon {
       color: $orange;
@@ -22,5 +37,10 @@
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .overview__icon {
+    font-size: 14px;
+    align-self: center;
   }
 }

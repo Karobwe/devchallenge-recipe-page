@@ -1,17 +1,48 @@
 @import "../utils";
 
 .recipe__instructions {
+  font-size: 24px;
+  line-height: 32px;
+
+  .section__title {
+    margin-bottom: 28px;
+  }
+
   .instructions_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+
     font-size: 16px;
     line-height: 20px;
 
     color: $black;
   }
 
+  .instruction__item {
+    display: flex;
+    column-gap: 15px;
+  }
+
   .instruction__step {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    // TODO: find another way to center vertically because some number are not well aligned
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 36px;
+    height: 36px;
+    border-radius: $radius;
+
     font-family: $font-main;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
+
+    color: $white;
+    background-color: $orange;
   }
 }

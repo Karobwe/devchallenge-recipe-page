@@ -1,5 +1,13 @@
 @import "../utils";
 
+header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  margin-top: 32px;
+}
+
 .header__title {
   font-family: $font-main;
   font-weight: bold;
@@ -7,11 +15,22 @@
   line-height: 32px;
 }
 
-.header__hook p {
-  font-style: italic;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
+.header__hook {
+  display: flex;
+  column-gap: 12px;
+  align-items: flex-start;
+
+  img {
+    position: relative;
+    top: .2em;
+  }
+
+  p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 .header__picture {

@@ -6,16 +6,18 @@
   row-gap: 20px;
 
   @include media-gte-sm {
-    //align-items: center;
     justify-content: space-between;
   }
 
   @include media-gte-lg {
-    width: 256px;
-    height: 367px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    width: 256px;
+    height: 367px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     border-radius: 12px;
     box-shadow: $box-shadow;

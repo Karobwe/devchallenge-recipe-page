@@ -51,7 +51,8 @@ section[class^="recipe__"] .section__title {
     font-size: 16px;
   }
 
-  a {
+  a,
+  a:visited {
     text-decoration: none;
     color: $grey4;
   }

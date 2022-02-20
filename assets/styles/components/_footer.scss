@@ -9,4 +9,9 @@ footer {
   line-height: 17px;
 
   text-align: center;
+
+  a,
+  a:visited {
+    color: inherit;
+  }
 }

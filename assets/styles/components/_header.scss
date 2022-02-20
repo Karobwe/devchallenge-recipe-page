@@ -13,6 +13,11 @@ header {
   font-weight: bold;
   font-size: 24px;
   line-height: 32px;
+
+  @include media-gte-lg {
+    font-size: 48px;
+    line-height: 64px;
+  }
 }
 
 .header__hook {
@@ -20,19 +25,22 @@ header {
   column-gap: 12px;
   align-items: flex-start;
 
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+
+  @include media-gte-lg {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   img {
     position: relative;
     top: .2em;
   }
-
-  p {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-  }
 }
 
 .header__picture {
-  width: clamp(calc(100vw - 11px * 2), 352px, 100%);
+  width: 100%;
 }

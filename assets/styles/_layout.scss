@@ -1,10 +1,21 @@
+@import "utils";
+
 .container {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 
-  width: 100%;
+  width: 352px;
   min-height: 100vh;
-  margin: 0 11px;
-  overflow: hidden;
+  margin: 0 auto;
+
+  @include media-gte-sm {
+    row-gap: 48px;
+
+    width: 600px;
+  }
+
+  @include media-gte-lg {
+    width: 960px;
+  }
 }

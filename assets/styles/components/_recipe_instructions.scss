@@ -1,11 +1,16 @@
 @import "../utils";
 
 .recipe__instructions {
-  font-size: 24px;
-  line-height: 32px;
 
   .section__title {
     margin-bottom: 28px;
+
+    font-size: 24px;
+    line-height: 32px;
+
+    @include media-gte-lg {
+      margin-top: 28px;
+    }
   }
 
   .instructions_list {
@@ -17,6 +22,10 @@
     line-height: 20px;
 
     color: $black;
+
+    @include media-gte-lg {
+      row-gap: 38px;
+    }
   }
 
   .instruction__item {

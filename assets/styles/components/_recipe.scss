@@ -2,6 +2,33 @@
 @import "recipe_ingredients";
 @import "recipe_instructions";
 
+@include media-gte-lg {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 216px;
+    grid-template: "ingredients overview"
+    "instructions ."
+    "source source";
+    column-gap: clamp(36px, 10em, 155px);
+
+    .recipe__overview {
+      grid-area: overview;
+    }
+
+    .recipe__ingredients {
+      grid-area: ingredients;
+    }
+
+    .recipe__instructions {
+      grid-area: instructions;
+    }
+
+    .recipe__source {
+      grid-area: source;
+    }
+  }
+}
+
 section[class^="recipe__"] .section__title {
   margin-top: 30px;
 
@@ -17,6 +44,12 @@ section[class^="recipe__"] .section__title {
   line-height: 150%;
 
   color: $grey4;
+
+  @include media-gte-lg {
+    margin: 58px 0 92px;
+
+    font-size: 16px;
+  }
 
   a {
     text-decoration: none;

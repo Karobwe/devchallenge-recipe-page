@@ -106,8 +106,9 @@
     }
 
     .checkmark:after {
-      z-index: 999;
-      left: 2.9em;
+      z-index: 10;
+      position: relative;
+      left: .5em;
       width: 6px; // checkmark's left side length
       height: 12px; // // checkmark's right side length
       border: solid $light;
